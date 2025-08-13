@@ -1,7 +1,3 @@
----
-title: Transfer Learning – Project Portfolio
----
-
 <div class="hero">
   <h1>Transfer Learning for Clinical Decision-Making</h1>
   <p class="sub">Generalizable models across heterogeneous CRS cohorts (SNOT-22 item scores and related outcomes)</p>
