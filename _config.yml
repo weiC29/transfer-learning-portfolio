@@ -1,0 +1,7 @@
+title: Transfer Learning – Portfolio
+description: Public-facing site for the transfer learning clinical decision-making research project
+theme: minima
+markdown: kramdown
+header_pages:
+  - updates.md
+  - resources.md
