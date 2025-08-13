@@ -106,3 +106,26 @@ a:hover { text-decoration: underline; }
   margin-top: 3rem;
   color: var(--muted);
 }
+/* Headings inside content sections */
+h2, h3 {
+  margin-top: 2rem; /* gives even spacing above */
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: var(--brand); /* brand blue for emphasis */
+  text-transform: uppercase; /* optional: makes them stand out more */
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+/* Reduce gap between 'Highlights' and the first subheading */
+h2 + h3 {
+  margin-top: 1rem;
+}
+
+/* Paragraph under h3: remove extra space at top */
+h3 + p {
+  margin-top: 0.25rem;
+}
