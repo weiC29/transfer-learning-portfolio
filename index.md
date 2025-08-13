@@ -4,10 +4,9 @@ title: Transfer Learning – Project Portfolio
 
 Generalizable models across heterogeneous CRS cohorts (SNOT-22 item scores and related outcomes)
 
-**Supervisors:** Dr. Sayeed S. Chowdhury · Dr. Snehasis Mukhopadhyay · Dr. Vijay Ramakrishnan  
-**Student:** Yu-Wei Chang
-
-*Affiliations: Purdue University · IU School of Medicine*
+Supervisors: Dr. Sayeed S. Chowdhury · Dr. Snehasis Mukhopadhyay · Dr. Vijay Ramakrishnan  
+Student: Yu-Wei Chang  
+Affiliations: Purdue University · IU School of Medicine
 
 ## Highlights
 
