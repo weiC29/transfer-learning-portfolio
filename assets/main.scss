@@ -1,18 +1,21 @@
 ---
-#
 ---
 
 @import "minima";
 
-
+/* =========================
+   Brand tokens / colors
+   ========================= */
 :root {
-  --brand: #2a6df4;   // accent blue
-  --ink: #111827;     // text
-  --muted: #6b7280;   // secondary text
-  --bg-soft: #f8fafc; // soft background
+  --brand: #2a6df4;   /* accent blue */
+  --ink: #111827;     /* text */
+  --muted: #6b7280;   /* secondary text */
+  --bg-soft: #f8fafc; /* soft background */
 }
 
-/* Base */
+/* =========================
+   Base tweaks
+   ========================= */
 body {
   color: var(--ink);
 }
@@ -22,12 +25,12 @@ body {
   box-shadow: 0 1px 0 rgba(0,0,0,0.04);
 }
 
-a {
-  color: var(--brand);
-}
+a { color: var(--brand); }
 a:hover { text-decoration: underline; }
 
-/* Hero */
+/* =========================
+   Hero section
+   ========================= */
 .hero {
   margin: 1.5rem 0 2rem;
   padding: 2.5rem 1.5rem;
@@ -44,11 +47,17 @@ a:hover { text-decoration: underline; }
   margin: 0.25rem 0 1rem;
   color: var(--muted);
 }
+
+/* =========================
+   Badges (responsive)
+   ========================= */
 .badges {
   display: flex;
   flex-wrap: wrap;
   gap: .5rem;
 }
+
+/* Layout + visuals */
 .badge {
   /* layout */
   flex: 1 1 auto;
@@ -61,13 +70,15 @@ a:hover { text-decoration: underline; }
   color: #3730a3;
   border: 1px solid #e0e7ff;
 }
-/* Stack on small screens */
+
+/* Stack badges on small screens */
 @media (max-width: 640px) {
   .badge { flex-basis: 100%; }
 }
 
-
-/* Cards */
+/* =========================
+   Cards grid
+   ========================= */
 .grid {
   display: grid;
   gap: 1rem;
@@ -87,7 +98,9 @@ a:hover { text-decoration: underline; }
 }
 .card h3 { margin-top: .25rem; }
 
-/* Footer */
+/* =========================
+   Footer
+   ========================= */
 .site-footer {
   border: 0;
   margin-top: 3rem;
