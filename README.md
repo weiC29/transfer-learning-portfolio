@@ -22,4 +22,4 @@ This site documents the progress of our research into applying transfer learning
 
 ## Live Site
 Once GitHub Pages is enabled, the portfolio will be available at:  
-`https://weiC29.github.io/transfer-learning-portfolio/`
+`https://github.com/weiC29/transfer-learning-portfolio.git`
