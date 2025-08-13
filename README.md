@@ -1,4 +1,4 @@
-# transfer-learning-portfolio# Transfer Learning – Project Portfolio
+Transfer Learning – Project Portfolio
 
 This is the public-facing portfolio for the **Transfer Learning in Clinical Decision-Making** research project. It contains safe-to-share summaries, milestones, and updates. No raw patient data or restricted materials will be stored here.
 
@@ -22,4 +22,4 @@ This site documents the progress of our research into applying transfer learning
 
 ## Live Site
 Once GitHub Pages is enabled, the portfolio will be available at:  
-`https://github.com/weiC29/transfer-learning-portfolio.git`
+`https://weiC29.github.io/transfer-learning-portfolio/`
