@@ -28,31 +28,26 @@ a:hover { text-decoration: underline; }
 /* =========================
    Subtitle + badges (Markdown-only)
    ========================= */
-/* 1st paragraph under the title = subtitle */
+/* Subtitle (first paragraph) */
 p:first-of-type {
   font-size: 1.05rem;
   color: var(--muted);
   margin: 0.35rem 0 0.75rem;
 }
 
-/* 2nd & 3rd paragraphs = pill badges (Supervisors, Student) */
+/* Supervisors / Student / Affiliations block */
 p:nth-of-type(2),
-p:nth-of-type(3) {
-  display: inline-block;
-  background: #eef2ff;
-  color: #3730a3;
-  border: 1px solid #e0e7ff;
-  border-radius: 999px;
-  padding: 0.35rem 0.75rem;
-  margin: 0.25rem 0.5rem 0.5rem 0;
-  font-size: 0.85rem;
+p:nth-of-type(3),
+p:nth-of-type(4) {
+  font-size: 0.95rem;
+  margin: 0.1rem 0;
 }
 
-/* Optional: make the affiliations line a touch lighter */
-p:nth-of-type(4) {
-  color: var(--muted);
-  font-size: 0.95rem;
-  margin-top: 0.25rem;
+/* Make labels (Supervisors:, Student:, Affiliations:) bolder */
+p:nth-of-type(2)::before,
+p:nth-of-type(3)::before,
+p:nth-of-type(4)::before {
+  font-weight: 600;
 }
 
 /* =========================
