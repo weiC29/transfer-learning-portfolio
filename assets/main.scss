@@ -1,6 +1,5 @@
 ---
 ---
-
 @import "minima";
 
 /* =========================
@@ -16,9 +15,7 @@
 /* =========================
    Base tweaks
    ========================= */
-body {
-  color: var(--ink);
-}
+body { color: var(--ink); }
 
 .site-header {
   border: 0;
@@ -29,40 +26,63 @@ a { color: var(--brand); }
 a:hover { text-decoration: underline; }
 
 /* =========================
-   Hero section
+   Subtitle + badges (Markdown-only)
    ========================= */
-.hero {
-  margin: 1.5rem 0 2rem;
-  padding: 2.5rem 1.5rem;
-  border-radius: 18px;
-  background: linear-gradient(180deg, #ffffff, var(--bg-soft));
-  border: 1px solid #e5e7eb;
-}
-.hero h1 {
-  margin: 0 0 .25rem 0;
-  font-size: 1.9rem;
-  line-height: 1.2;
-}
-.hero p.sub {
-  margin: 0.25rem 0 1rem;
+/* 1st paragraph under the title = subtitle */
+p:first-of-type {
+  font-size: 1.05rem;
   color: var(--muted);
+  margin: 0.35rem 0 0.75rem;
+}
+
+/* 2nd & 3rd paragraphs = pill badges (Supervisors, Student) */
+p:nth-of-type(2),
+p:nth-of-type(3) {
+  display: inline-block;
+  background: #eef2ff;
+  color: #3730a3;
+  border: 1px solid #e0e7ff;
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  margin: 0.25rem 0.5rem 0.5rem 0;
+  font-size: 0.85rem;
+}
+
+/* Optional: make the affiliations line a touch lighter */
+p:nth-of-type(4) {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
 }
 
 /* =========================
-   Badges (responsive)
+   Headings (Highlights section)
    ========================= */
-.badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .5rem;
+h2, h3 {
+  margin-top: 2rem;
+  font-weight: 700;
 }
 
-/* Layout + visuals */
-.badge {
-  /* layout */
-  flex: 1 1 auto;
+h3 {
+  font-size: 1.1rem;
+  color: var(--brand);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
 
-  /* visuals */
+/* Reduce gap between 'Highlights' (h2) and the first h3 */
+h2 + h3 { margin-top: 1rem; }
+
+/* Tighter paragraph under each h3 */
+h3 + p { margin-top: 0.25rem; }
+
+/* =========================
+   (Optional) badges group + cards (future)
+   ========================= */
+.badges { display: flex; flex-wrap: wrap; gap: .5rem; }
+.badge {
+  flex: 1 1 auto;
   font-size: .85rem;
   padding: .35rem .6rem;
   border-radius: 999px;
@@ -70,15 +90,8 @@ a:hover { text-decoration: underline; }
   color: #3730a3;
   border: 1px solid #e0e7ff;
 }
+@media (max-width: 640px) { .badge { flex-basis: 100%; } }
 
-/* Stack badges on small screens */
-@media (max-width: 640px) {
-  .badge { flex-basis: 100%; }
-}
-
-/* =========================
-   Cards grid
-   ========================= */
 .grid {
   display: grid;
   gap: 1rem;
@@ -105,27 +118,4 @@ a:hover { text-decoration: underline; }
   border: 0;
   margin-top: 3rem;
   color: var(--muted);
-}
-/* Headings inside content sections */
-h2, h3 {
-  margin-top: 2rem; /* gives even spacing above */
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 1.1rem;
-  color: var(--brand); /* brand blue for emphasis */
-  text-transform: uppercase; /* optional: makes them stand out more */
-  letter-spacing: 0.5px;
-  margin-bottom: 0.25rem;
-}
-
-/* Reduce gap between 'Highlights' and the first subheading */
-h2 + h3 {
-  margin-top: 1rem;
-}
-
-/* Paragraph under h3: remove extra space at top */
-h3 + p {
-  margin-top: 0.25rem;
 }
