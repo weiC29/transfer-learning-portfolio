@@ -4,6 +4,7 @@
 
 @import "minima";
 
+
 :root {
   --brand: #2a6df4;   // accent blue
   --ink: #111827;     // text
@@ -49,6 +50,10 @@ a:hover { text-decoration: underline; }
   gap: .5rem;
 }
 .badge {
+  /* layout */
+  flex: 1 1 auto;
+
+  /* visuals */
   font-size: .85rem;
   padding: .35rem .6rem;
   border-radius: 999px;
@@ -56,6 +61,11 @@ a:hover { text-decoration: underline; }
   color: #3730a3;
   border: 1px solid #e0e7ff;
 }
+/* Stack on small screens */
+@media (max-width: 640px) {
+  .badge { flex-basis: 100%; }
+}
+
 
 /* Cards */
 .grid {
