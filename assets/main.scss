@@ -111,3 +111,10 @@ h2 + h3 { margin-top: 1rem; }
   margin-top: 3rem;
   color: var(--muted);
 }
+.last-updated {
+  font-size: 0.95rem;     /* slightly smaller than body text */
+  font-style: italic;     /* optional, makes it subtle */
+  color: var(--muted);    /* use your muted text color */
+  margin-bottom: 1.2rem;  /* space before the next heading */
+  display: block;         /* ensures full-width block */
+}
