@@ -1,7 +1,7 @@
 ---
 title: Updates & Meeting Notes
 ---
-Last updated: 2025-08-13 — Started exploring INSPIRE dataset; looking into Siamese networks and common embeddings.
+Last updated: 2025-08-14 — Started exploring INSPIRE dataset; looking into Siamese networks and common embeddings.
 ---
 
 # Updates & Meeting Notes
