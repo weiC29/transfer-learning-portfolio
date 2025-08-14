@@ -1,6 +1,8 @@
 ---
 title: Updates & Meeting Notes
 ---
+Last updated: 2025-08-13 — Started exploring INSPIRE dataset; looking into Siamese networks and common embeddings.
+---
 
 # Updates & Meeting Notes
 
@@ -12,3 +14,6 @@ title: Updates & Meeting Notes
 
 ## 2025-08-11 (Kickoff Meeting Scheduled)
 - Meeting planned with Dr. Chowdhury to discuss dataset familiarization and initial exercise.
+- Created GitHub Pages site for project showcase.
+- Added supervisors, affiliations, and student info.
+- Basic styling and layout implemented.
