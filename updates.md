@@ -1,7 +1,11 @@
+---
+title: Updates & Meeting Notes
+---
+
 <span class="last-updated">Last updated: 2025-08-14 — Started exploring INSPIRE dataset; looking into Siamese networks and common embeddings.</span>
 
 
-# Updates & Meeting Notes
+# Meeting Notes
 
 ## 2025-08-14 — Kickoff Sync (Dr. Chowdhury)
 - **Plan:** Near-future = build reusable pipeline ready for German dataset; Long-term = common embeddings + transfer learning.
